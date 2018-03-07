@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="257.0" prefWidth="300.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="gestaorecursos.Controller.Dialog.UfDialogController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/ufdialog.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="txtFieldEstado" layoutX="21.0" layoutY="101.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="txtFieldUF" layoutX="22.0" layoutY="143.0" prefHeight="25.0" prefWidth="72.0" />
+      <Group layoutX="96.0" layoutY="205.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button fx:id="btnConfirmar" mnemonicParsing="false" onAction="#handleBtnConfirmar" prefHeight="25.0" prefWidth="72.0" text="Confirmar" />
+            <Button fx:id="btnCancelar" layoutX="82.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="72.0" text="Cancelar" />
+         </children>
+      </Group>
+      <Label fx:id="lbEstado" layoutX="22.0" layoutY="84.0" text="Estado" />
+      <Label fx:id="lbUf" layoutX="22.0" layoutY="126.0" text="UF" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1075.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.PagamentosController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/pagamentos.css" />
+    </stylesheets>
+   <children>
+      <ComboBox fx:id="cbxPrograma" layoutX="20.0" layoutY="140.0" prefHeight="25.0" prefWidth="718.0" />
+      <ComboBox fx:id="cbxUEx" layoutX="20.0" layoutY="190.0" prefHeight="25.0" prefWidth="718.0" />
+      <ComboBox fx:id="cbxAno" layoutX="20.0" layoutY="240.0" prefHeight="25.0" prefWidth="110.0" />
+      <ComboBox fx:id="cbxTrimestre" layoutX="137.0" layoutY="240.0" prefHeight="25.0" prefWidth="110.0" />
+      <DatePicker fx:id="inputEmissao" layoutX="259.0" layoutY="240.0" prefHeight="25.0" prefWidth="110.0" />
+      <ComboBox fx:id="cbxTipoDocumento" layoutX="383.0" layoutY="240.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="txtFieldDocumento" layoutX="504.0" layoutY="240.0" prefHeight="25.0" prefWidth="110.0" />
+      <DatePicker fx:id="inputDtPagamento" layoutX="626.0" layoutY="240.0" prefHeight="25.0" prefWidth="110.0" />
+      <ComboBox fx:id="cbxFornecedor" layoutX="20.0" layoutY="290.0" prefHeight="25.0" prefWidth="718.0" />
+      <TextField fx:id="txtFieldHistorico" layoutX="20.0" layoutY="340.0" prefHeight="25.0" prefWidth="718.0" />
+      <ComboBox fx:id="cbxDadosBancarios" layoutX="20.0" layoutY="390.0" prefHeight="25.0" prefWidth="355.0" />
+      <TextField fx:id="txtFieldCheque" layoutX="422.0" layoutY="389.0" />
+      <DatePicker fx:id="inputEmissaoCheque" layoutX="628.0" layoutY="389.0" prefHeight="25.0" prefWidth="110.0" />
+      <RadioButton fx:id="rdBtnCusteio" layoutX="807.0" layoutY="83.0" mnemonicParsing="false" selected="true" text="Custeio">
+         <toggleGroup>
+            <ToggleGroup fx:id="tpcontratacao" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rdBtnCapital" layoutX="894.0" layoutY="83.0" mnemonicParsing="false" text="Capital" toggleGroup="$tpcontratacao" />
+      <TextField fx:id="txtValor" layoutX="805.0" layoutY="140.0" promptText="0,00" text="0,00" />
+      <TextField fx:id="txtInss" layoutX="805.0" layoutY="190.0" promptText="0,00" text="0,00" />
+      <TextField fx:id="txtPis" layoutX="805.0" layoutY="240.0" promptText="0,00" text="0,00" />
+      <TextField fx:id="txtIr" layoutX="805.0" layoutY="290.0" promptText="0,00" />
+      <TextField fx:id="txtIss" layoutX="805.0" layoutY="340.0" promptText="0,00" />
+      <TextField fx:id="txtOutras" layoutX="805.0" layoutY="390.0" promptText="0,00" />
+      <TextField fx:id="txtVlrLiquido" layoutX="805.0" layoutY="440.0" />
+      <Label fx:id="labelPrograma" layoutX="21.0" layoutY="123.0" text="Programa" />
+      <Label fx:id="labelUEx" layoutX="21.0" layoutY="173.0" text="Unidade Executora" />
+      <Label fx:id="labelFornecedor" layoutX="21.0" layoutY="273.0" text="Fornecedor" />
+      <Label fx:id="labelEmissao" layoutX="260.0" layoutY="223.0" text="Emissão" />
+      <Label fx:id="labelValor" layoutX="806.0" layoutY="123.0" text="Valor" />
+      <Label fx:id="labelDocumento" layoutX="505.0" layoutY="223.0" text="Nº Documento" />
+      <Label fx:id="labelTipoDocumento" layoutX="384.0" layoutY="223.0" text="Tipo Documento" />
+      <Label fx:id="labelEmissaoChq" layoutX="629.0" layoutY="372.0" text="Emissão" />
+      <Label fx:id="labelCheque" layoutX="423.0" layoutY="372.0" text="Cheque nº" />
+      <Label fx:id="labelHistorico" layoutX="21.0" layoutY="323.0" text="Histórico da Despesa" />
+      <Label fx:id="labelDtPagamento" layoutX="627.0" layoutY="223.0" text="Data Pagamento" />
+      <Label fx:id="labelDadosBancarios" layoutX="21.0" layoutY="373.0" text="Dados Bancários" />
+      <Label layoutX="806.0" layoutY="173.0" text="INSS" />
+      <Label layoutX="806.0" layoutY="423.0" text="Valor Líquido" />
+      <Text fill="#bfbfbf" fontSmoothingType="LCD" layoutX="20.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Despesa">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Line endX="155.0" fill="#cfcccc" layoutX="119.0" layoutY="82.0" startX="-100.0" stroke="#ddd7d7">
+         <effect>
+            <GaussianBlur radius="0.0" />
+         </effect>
+      </Line>
+      <Label layoutX="21.0" layoutY="223.0" text="Ano" />
+      <Label layoutX="138.0" layoutY="223.0" text="Trimestre" />
+      <Label layoutX="806.0" layoutY="223.0" text="PISCofins" />
+      <Label layoutX="806.0" layoutY="273.0" text="IR" />
+      <Button fx:id="btnInserir" layoutX="805.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleBtnInserir" prefHeight="25.0" prefWidth="71.0" text="Confirmar" />
+      <Button fx:id="btnCancelar" layoutX="886.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="71.0" text="Cancelar" />
+      <Label layoutX="806.0" layoutY="323.0" text="ISS" />
+      <Label layoutX="806.0" layoutY="373.0" text="Outras" />
+   </children>
+</AnchorPane>

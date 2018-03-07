@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1100.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.ConciliacaoController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/conciliacao.css" />
+    </stylesheets>
+   <children>
+      <Group layoutX="535.0" layoutY="257.0">
+         <children>
+            <Button fx:id="btnDTransferirParaConciliado" layoutY="30.0" mnemonicParsing="false" onAction="#handleBtnDTransferirParaConciliado" prefHeight="25.0" prefWidth="30.0" text="&gt;" textFill="#9d9999" />
+            <Button fx:id="btnDTransferirParaNaoConciliado" mnemonicParsing="false" onAction="#handlebtnDTransferirParaNaoConciliado" prefHeight="25.0" prefWidth="30.0" text="&lt;" textFill="#9d9999">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Label layoutX="20.0" layoutY="31.0" text="Painel de Conciliação" textFill="#9a9090">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbViewDespesaNaoConciliada" layoutX="20.0" layoutY="180.0" prefHeight="215.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="tbColEmissaoNaoConciliadoD" minWidth="13.0" prefWidth="70.0" text="Emissão" />
+          <TableColumn fx:id="tbColNumDocNaoConciliadoD" prefWidth="50.0" text="Nº Doc" />
+            <TableColumn fx:id="tbColFornecedorNaoConciliadoD" prefWidth="160.0" text="Fornecedor" />
+            <TableColumn fx:id="tbColDocFornecedorNaoConciliadoD" text="CPF/CNPJ" />
+            <TableColumn fx:id="tbColChequeNaoConciliadoD" prefWidth="63.0" text="Cheque" />
+            <TableColumn fx:id="tbColValorNaoConciliadoD" prefWidth="94.0" text="Valor" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tbViewDespesaConciliada" layoutX="580.0" layoutY="180.0" prefHeight="215.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="tbColEmissaoConciliadoD" prefWidth="70.0" text="Emissão" />
+            <TableColumn fx:id="tbColNumDocConciliadoD" prefWidth="50.0" text="Nº Doc" />
+            <TableColumn fx:id="tbColFornecedorConciliadoD" prefWidth="160.0" text="Fornecedor" />
+            <TableColumn fx:id="tbColDocFornecedorConciliadoD" text="CPF/CNPJ" />
+            <TableColumn fx:id="tbColChequeConciliadoD" prefWidth="50.0" text="Cheque" />
+            <TableColumn fx:id="tbColValorConciliadoD" prefWidth="107.0" text="Valor" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="cbxUex" layoutX="21.0" layoutY="106.0" prefWidth="150.0" />
+      <Label layoutX="21.0" layoutY="89.0" text="UEx" />
+      <ComboBox fx:id="cbxAno" layoutX="222.0" layoutY="106.0" prefWidth="100.0" />
+      <Label layoutX="223.0" layoutY="89.0" text="Ano" />
+      <ComboBox fx:id="cbxTrimestre" layoutX="370.0" layoutY="106.0" prefWidth="150.0" />
+      <Label layoutX="371.0" layoutY="89.0" text="Trimestre" />
+      <Label layoutX="20.0" layoutY="154.0" text="Despesas Pendentes" />
+      <Label layoutX="580.0" layoutY="154.0" text="Despesas Conciliadas" />
+      <ComboBox fx:id="cbxConta" layoutX="584.0" layoutY="106.0" prefWidth="150.0" />
+      <Label layoutX="585.0" layoutY="89.0" text="Conta" />
+      <TableView fx:id="tbViewReceitaNaoConciliada" layoutX="22.0" layoutY="427.0" prefHeight="215.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="tbColDataNaoConciliadoR" minWidth="13.0" prefWidth="70.0" text="Data" />
+            <TableColumn fx:id="tbColNumDocNaoConciliadoR" prefWidth="60.0" text="Nº Doc" />
+            <TableColumn fx:id="tbColHistoricoNaoConciliadoR" prefWidth="302.0" text="Histórico" />
+            <TableColumn fx:id="tbColValorNaoConciliadoR" text="Valor" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tbViewReceitaConciliada" layoutX="580.0" layoutY="427.0" prefHeight="215.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="tbColDataConciliadoR" prefWidth="70.0" text="Data" />
+            <TableColumn fx:id="tbColNumDocConciliadoR" prefWidth="60.0" text="Nº Doc" />
+            <TableColumn fx:id="tbColHistoricoR" prefWidth="302.0" text="Histórico" />
+            <TableColumn fx:id="tbColValorConciliadoR" text="Valor" />
+         </columns>
+      </TableView>
+      <Group layoutX="535.0" layoutY="514.0">
+         <children>
+            <Button fx:id="btnRTransferirParaConciliado" layoutY="30.0" mnemonicParsing="false" onAction="#handleBtnRTransferirParaConciliado" prefHeight="25.0" prefWidth="30.0" text="&gt;" />
+            <Button fx:id="btnRTransferirParaNaoConciliado" mnemonicParsing="false" onAction="#handleBtnRTransferirParaNaoConciliado" prefHeight="25.0" prefWidth="30.0" text="&lt;" />
+         </children>
+      </Group>
+      <Label fx:id="lbTotalDespesaConciliada" alignment="CENTER_RIGHT" layoutX="444.0" layoutY="395.0" prefHeight="17.0" prefWidth="75.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTotalDespesaNAOConciliada" alignment="CENTER_RIGHT" layoutX="1004.0" layoutY="395.0" prefHeight="17.0" prefWidth="75.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTotalReceitaConciliada" alignment="CENTER_RIGHT" layoutX="446.0" layoutY="642.0" prefHeight="17.0" prefWidth="75.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTotalReceitaNAOConciliada" alignment="CENTER_RIGHT" layoutX="1004.0" layoutY="642.0" prefHeight="17.0" prefWidth="75.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="396.0" layoutY="395.0" text="TOTAL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="960.0" layoutY="395.0" text="TOTAL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="642.0" text="TOTAL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="960.0" layoutY="642.0" text="TOTAL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

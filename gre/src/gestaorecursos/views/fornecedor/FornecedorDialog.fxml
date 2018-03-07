@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="913.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.Dialog.FornecedorDialogController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/cadfornecedor.css" />
+    </stylesheets>
+   <children>
+      <Text fill="#bfbfbf" fontSmoothingType="LCD" layoutX="37.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Fornecedor">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Line endX="155.0" fill="#cfcccc" layoutX="139.0" layoutY="102.0" startX="-100.0" stroke="#ddd7d7">
+         <effect>
+            <GaussianBlur radius="0.0" />
+         </effect>
+      </Line>
+      <ComboBox fx:id="cbxTipoPessoa" layoutX="39.0" layoutY="126.0" prefWidth="150.0" visibleRowCount="2" />
+      <TextField fx:id="txtFieldNomeFantasia" layoutX="216.0" layoutY="126.0" />
+      <Label layoutX="40.0" layoutY="164.0" text="CNPJ" />
+      <TextField fx:id="txtFieldCnpj" layoutX="39.0" layoutY="181.0" />
+      <Label layoutX="217.0" layoutY="164.0" text="Razão Social" />
+      <TextField fx:id="txtFieldNome" layoutX="216.0" layoutY="181.0" prefHeight="25.0" prefWidth="645.0" />
+      <Label layoutX="40.0" layoutY="230.0" text="Rua/Pça/Av" />
+      <TextField fx:id="txtFieldEndRua" layoutX="39.0" layoutY="247.0" prefHeight="25.0" prefWidth="645.0" />
+      <Label layoutX="707.0" layoutY="230.0" text="nº" />
+      <TextField fx:id="txtFieldEndNum" layoutX="706.0" layoutY="247.0" prefHeight="25.0" prefWidth="46.0" />
+      <Label layoutX="767.0" layoutY="230.0" text="Complemento" />
+      <TextField fx:id="txtFieldEndCompl" layoutX="766.0" layoutY="247.0" prefHeight="25.0" prefWidth="93.0" />
+      <Label layoutX="40.0" layoutY="289.0" text="CEP" />
+      <TextField fx:id="txtFieldCep" layoutX="39.0" layoutY="306.0" prefHeight="25.0" prefWidth="100.0" />
+      <ComboBox fx:id="cbxBairro" layoutX="148.0" layoutY="306.0" prefWidth="222.0" />
+      <ComboBox fx:id="cbxMunicipio" layoutX="382.0" layoutY="306.0" prefHeight="25.0" prefWidth="256.0" />
+      <ComboBox fx:id="cbxUf" layoutX="648.0" layoutY="306.0" prefHeight="25.0" prefWidth="76.0" />
+      <ComboBox fx:id="cbxPais" layoutX="734.0" layoutY="306.0" prefHeight="25.0" prefWidth="126.0" />
+      <Label layoutX="149.0" layoutY="289.0" text="Bairro" />
+      <Label layoutX="383.0" layoutY="289.0" text="Município" />
+      <Label layoutX="649.0" layoutY="289.0" text="UF" />
+      <Label layoutX="735.0" layoutY="289.0" text="País" />
+      <Label layoutX="40.0" layoutY="358.0" text="DDD" />
+      <TextField fx:id="txtFieldDDD" layoutX="39.0" layoutY="375.0" prefHeight="25.0" prefWidth="32.0" />
+      <Label layoutX="102.0" layoutY="358.0" text="Telefone" />
+      <TextField fx:id="txtFieldTelefone" layoutX="101.0" layoutY="375.0" />
+      <Label layoutX="284.0" layoutY="358.0" text="Email" />
+      <TextField fx:id="txtFieldEmail" layoutX="283.0" layoutY="375.0" prefHeight="25.0" prefWidth="574.0" />
+      <Group layoutX="575.0" layoutY="518.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button fx:id="btnConfirmar" mnemonicParsing="false" onAction="#handleBtnConfirmar" prefHeight="25.0" prefWidth="80.0" text="Confirmar" />
+            <Button fx:id="btnCancelar" layoutX="93.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="80.0" text="Cancelar" />
+         </children>
+      </Group>
+      <Label layoutX="39.0" layoutY="109.0" text="Tipo Pessoa" />
+      <Label layoutX="217.0" layoutY="109.0" text="Nome Fantasia" />
+   </children>
+</AnchorPane>

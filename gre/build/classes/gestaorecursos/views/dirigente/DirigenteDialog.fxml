@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.Dialog.DirigenteDialogController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/caddirigente.css" />
+    </stylesheets>
+   <children>
+      <Text fill="#bfbfbf" fontSmoothingType="LCD" layoutX="37.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Dirigente">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Line endX="155.0" fill="#cfcccc" layoutX="139.0" layoutY="102.0" startX="-100.0" stroke="#ddd7d7">
+         <effect>
+            <GaussianBlur radius="0.0" />
+         </effect>
+      </Line>
+      <ComboBox fx:id="cbxTipoPessoa" layoutX="36.0" layoutY="150.0" prefWidth="150.0" visibleRowCount="2" />
+      <Label layoutX="36.0" layoutY="133.0" text="Tipo Pessoa" />
+      <Label layoutX="39.0" layoutY="176.0" text="CPF" />
+      <TextField fx:id="txtFieldCpf" layoutX="37.0" layoutY="193.0" />
+      <Label layoutX="196.0" layoutY="176.0" text="Nome" />
+      <TextField fx:id="txtNome" layoutX="195.0" layoutY="193.0" prefHeight="25.0" prefWidth="652.0" />
+      <Label layoutX="867.0" layoutY="176.0" text="Nacionalidade" />
+      <TextField fx:id="txtFieldNacionalidade" layoutX="866.0" layoutY="193.0" />
+      <Label layoutX="1025.0" layoutY="176.0" text="Sexo" />
+      <ComboBox fx:id="cbxSexo" layoutX="1024.0" layoutY="193.0" prefHeight="25.0" prefWidth="110.0" />
+      <Label layoutX="1145.0" layoutY="176.0" text="Estado Civil" />
+      <ComboBox fx:id="cbxECivil" layoutX="1144.0" layoutY="193.0" prefHeight="25.0" prefWidth="129.0" />
+      <Label layoutX="38.0" layoutY="229.0" text="Rua/Av/Pça" />
+      <TextField fx:id="txtFieldEndRua" layoutX="36.0" layoutY="246.0" prefHeight="25.0" prefWidth="486.0" />
+      <Label layoutX="536.0" layoutY="229.0" text="nº" />
+      <TextField fx:id="txtFieldEndNum" layoutX="534.0" layoutY="246.0" prefHeight="25.0" prefWidth="57.0" />
+      <Label layoutX="603.0" layoutY="229.0" text="Complemento" />
+      <TextField fx:id="txtFieldEndCompl" layoutX="601.0" layoutY="246.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label layoutX="689.0" layoutY="229.0" text="CEP" />
+      <TextField fx:id="txtFieldCep" layoutX="688.0" layoutY="246.0" prefHeight="25.0" prefWidth="71.0" />
+      <Label layoutX="769.0" layoutY="229.0" text="Bairro" />
+      <ComboBox fx:id="cbxBairro" layoutX="768.0" layoutY="246.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="944.0" layoutY="229.0" text="Município" />
+      <ComboBox fx:id="cbxMunicipio" layoutX="943.0" layoutY="246.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="1117.0" layoutY="229.0" text="UF" />
+      <ComboBox fx:id="cbxUf" layoutX="1116.0" layoutY="246.0" prefHeight="25.0" prefWidth="62.0" />
+      <ComboBox fx:id="cbxPais" layoutX="1189.0" layoutY="245.0" prefHeight="25.0" prefWidth="86.0" />
+      <Label layoutX="38.0" layoutY="282.0" text="DDD" />
+      <TextField fx:id="txtFieldDdd" layoutX="36.0" layoutY="299.0" prefHeight="25.0" prefWidth="33.0" />
+      <Label layoutX="83.0" layoutY="282.0" text="Telefone" />
+      <TextField fx:id="txtFieldTel" layoutX="81.0" layoutY="299.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="188.0" layoutY="282.0" text="Celular" />
+      <TextField fx:id="txtFieldFax" layoutX="186.0" layoutY="299.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="293.0" layoutY="282.0" text="Email" />
+      <TextField fx:id="txtFieldEmail" layoutX="292.0" layoutY="299.0" prefHeight="25.0" prefWidth="365.0" />
+      <Label layoutX="668.0" layoutY="282.0" text="Cargo" />
+      <TextField fx:id="txtFieldCargo" layoutX="667.0" layoutY="299.0" />
+      <Label layoutX="828.0" layoutY="282.0" text="Identidade" />
+      <TextField fx:id="txtFieldIdentidade" layoutX="827.0" layoutY="299.0" />
+      <Label layoutX="988.0" layoutY="282.0" text="Data Emissão" />
+      <DatePicker fx:id="datePickerEmissao" layoutX="987.0" layoutY="299.0" prefHeight="25.0" prefWidth="129.0" />
+      <Label layoutX="1135.0" layoutY="282.0" text="Org. Expedidor" />
+      <TextField fx:id="txtFieldOrgaoExp" layoutX="1134.0" layoutY="299.0" prefHeight="25.0" prefWidth="139.0" />
+      <ComboBox fx:id="cbxUex" layoutX="37.0" layoutY="344.0" prefHeight="25.0" prefWidth="620.0" />
+      <Button fx:id="btnConfirmar" layoutX="1080.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleBtnConfirmar" prefHeight="25.0" prefWidth="80.0" text="Confirmar" />
+      <Button fx:id="btnCancelar" layoutX="1170.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="80.0" text="Cancelar" />
+      <Label layoutX="38.0" layoutY="327.0" text="UEx" />
+      <Label layoutX="1182.0" layoutY="228.0" text="País" />
+   </children>
+</AnchorPane>

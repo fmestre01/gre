@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1075.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.ContaEscolaController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/inserir.css" />
+    </stylesheets>
+   <children>
+      <Accordion layoutY="163.0" />
+      <Accordion>
+        <panes>
+          <TitledPane animated="false" prefHeight="206.0" prefWidth="300.0" text="Pagamentos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                      <Button fx:id="btnPagamentos" alignment="CENTER" contentDisplay="RIGHT" layoutY="1.0" mnemonicParsing="false" onAction="#handleOpenPagamentos" prefHeight="25.0" prefWidth="300.0" text="Novo Pagamento">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Button>
+                        <Button fx:id="btnDeducao" layoutY="27.0" mnemonicParsing="false" onAction="#handleOpenDeducao" prefHeight="25.0" prefWidth="300.0" text="Nova Dedução">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Button>
+                        <Button fx:id="btnConsultarPg" layoutY="53.0" mnemonicParsing="false" onAction="#handleBtnConsultarPg" prefHeight="25.0" prefWidth="300.0" text="Consultar Pagamento" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Recebimentos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnRecebimentos" layoutY="1.0" mnemonicParsing="false" onAction="#handleOpenRecebimentos" prefHeight="25.0" prefWidth="300.0" text="Novo Recebimento">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Button>
+                        <Button fx:id="btnAdicao" layoutY="27.0" mnemonicParsing="false" onAction="#handleOpenAdicao" prefHeight="25.0" prefWidth="300.0" text="Nova Adição">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Button>
+                        <Button fx:id="btnConsultarRec" layoutY="53.0" mnemonicParsing="false" onAction="#handleBtnConsultarRec" prefHeight="25.0" prefWidth="300.0" text="Consultar Recebimentos" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane animated="false" text="Saldos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnSaldos" layoutY="1.0" mnemonicParsing="false" onAction="#handleBtnSaldos" prefHeight="25.0" prefWidth="300.0" text="Inserir Saldos">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Bens">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnInserirBens" layoutY="1.0" mnemonicParsing="false" onAction="#handleOpenInserirBens" prefHeight="25.0" prefWidth="300.0" text="Inserir Bens" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Conciliação">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnConciliacao" layoutY="1.0" mnemonicParsing="false" onAction="#handleBtnConciliacao" prefWidth="300.0" text="Conciliar Banco">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+          <TitledPane animated="false" text="Sala de Recursos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnSRPagamentos" layoutY="1.0" mnemonicParsing="false" onAction="#handleBtnSRPagamentos" prefWidth="300.0" text="Inserir Pagamentos" />
+                        <Button fx:id="btnSRRecebimentos" layoutY="27.0" mnemonicParsing="false" onAction="#handleBtnSRRecebimentos" prefWidth="300.0" text="Inserir Recebimentos" />
+                        <Button fx:id="btnSRSaldos" layoutY="53.0" mnemonicParsing="false" onAction="#handleBtnSRSaldos" prefWidth="300.0" text="Inserir Saldos" />
+                        <Button fx:id="btnSRConciliacao" layoutY="79.0" mnemonicParsing="false" onAction="#handleBtnSRConciliacao" prefWidth="300.0" text="Conciliacao" />
+                        <Button fx:id="btnSRAdicao" layoutY="105.0" mnemonicParsing="false" onAction="#handleBtnSRAdicao" prefHeight="25.0" prefWidth="300.0" text="Inserir Adição" />
+                        <Button fx:id="btnSRDeducao" layoutY="131.0" mnemonicParsing="false" onAction="#handleBtnSRDeducao" prefHeight="25.0" prefWidth="300.0" text="Inserir Dedução" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane animated="false" text="Relatórios">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnImprimirPagCE" layoutY="1.0" mnemonicParsing="false" onAction="#handleBtnImprimirPagCE" prefHeight="25.0" prefWidth="300.0" text="Prestação de Contas">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnRelConciliacao" layoutY="27.0" mnemonicParsing="false" onAction="#handleBtnRelConciliacao" prefWidth="300.0" text="Conciliação">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnRelBens" layoutY="52.0" mnemonicParsing="false" onAction="#handleBtnImprimirBensCE" prefWidth="300.0" text="Relação de Bens">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Label fx:id="lbDB" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="217.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="6.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

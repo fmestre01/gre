@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="206.0" prefWidth="487.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="gestaorecursos.Controller.Dialog.HistoricosDialogController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/historicosdialog.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="54.0" layoutY="47.0" text="Histórico" />
+      <Label layoutX="31.0" layoutY="75.0" text="Conta Débito" />
+      <Label layoutX="28.0" layoutY="106.0" text="Conta Crédito" />
+      <TextField fx:id="txtFieldHistorico" layoutX="112.0" layoutY="42.0" prefHeight="25.0" prefWidth="318.0" />
+      <TextField fx:id="txtFieldCtaDeb" layoutX="112.0" layoutY="72.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField fx:id="txtFieldCtaCred" layoutX="112.0" layoutY="102.0" prefHeight="25.0" prefWidth="70.0" />
+      <Group layoutX="245.0" layoutY="159.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button fx:id="btnConfirmar" mnemonicParsing="false" onAction="#handleBtnConfirmar" text="Confirmar" />
+            <Button fx:id="btnCancelar" layoutX="78.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="69.0" text="Cancelar" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

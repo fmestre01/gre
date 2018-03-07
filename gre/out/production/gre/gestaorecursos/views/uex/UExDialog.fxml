@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="620.0" prefWidth="1075.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.Dialog.UExDialogController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/caduex.css" />
+    </stylesheets>
+   <children>
+      <Text fill="#bfbfbf" fontSmoothingType="LCD" layoutX="27.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar UEx">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Line endX="155.0" fill="#cfcccc" layoutX="129.0" layoutY="92.0" startX="-100.0" stroke="#ddd7d7">
+         <effect>
+            <GaussianBlur radius="0.0" />
+         </effect>
+      </Line>
+      <Label layoutX="30.0" layoutY="126.0" text="Uex Fantasia" />
+      <TextField fx:id="txtFieldUexF" layoutX="29.0" layoutY="143.0" prefHeight="25.0" prefWidth="645.0" />
+      <Label layoutX="697.0" layoutY="126.0" text="Apelido" />
+      <TextField fx:id="txtFieldApelido" layoutX="696.0" layoutY="143.0" />
+      <Label layoutX="30.0" layoutY="171.0" text="Uex" />
+      <TextField fx:id="txtFieldUex" layoutX="29.0" layoutY="188.0" prefHeight="25.0" prefWidth="645.0" />
+      <Label layoutX="697.0" layoutY="168.0" text="CNPJ" />
+      <TextField fx:id="txtFieldCNPJ" layoutX="696.0" layoutY="185.0" />
+      <Label layoutX="30.0" layoutY="220.0" text="Rua/Pça/Av" />
+      <TextField fx:id="txtFieldEndRua" layoutX="29.0" layoutY="237.0" prefHeight="25.0" prefWidth="645.0" />
+      <Label layoutX="697.0" layoutY="220.0" text="nº" />
+      <TextField fx:id="txtFieldEndNum" layoutX="696.0" layoutY="237.0" prefHeight="25.0" prefWidth="46.0" />
+      <Label layoutX="757.0" layoutY="220.0" text="Complemento" />
+      <TextField fx:id="txtFieldEndCompl" layoutX="756.0" layoutY="237.0" prefHeight="25.0" prefWidth="93.0" />
+      <Label layoutX="30.0" layoutY="279.0" text="CEP" />
+      <TextField fx:id="txtFieldCEP" layoutX="29.0" layoutY="296.0" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="123.0" layoutY="279.0" text="Bairro" />
+      <Label layoutX="288.0" layoutY="279.0" text="Município" />
+      <Label layoutX="457.0" layoutY="279.0" text="UF" />
+      <ComboBox fx:id="cbxBairro" layoutX="121.0" layoutY="296.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbxCidade" layoutX="288.0" layoutY="296.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbxUf" layoutX="456.0" layoutY="296.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label layoutX="30.0" layoutY="348.0" text="Caixa Postal" />
+      <TextField fx:id="txtFieldCxPostal" layoutX="29.0" layoutY="365.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="167.0" layoutY="348.0" text="DDD" />
+      <TextField fx:id="txtFieldDDD" layoutX="166.0" layoutY="365.0" prefHeight="25.0" prefWidth="32.0" />
+      <Label layoutX="208.0" layoutY="348.0" text="Telefone" />
+      <TextField fx:id="txtFieldTelefone" layoutX="207.0" layoutY="365.0" />
+      <Label layoutX="370.0" layoutY="348.0" text="Fax" />
+      <TextField fx:id="txtFieldFax" layoutX="369.0" layoutY="365.0" />
+      <Label layoutX="529.0" layoutY="348.0" text="Email" />
+      <TextField fx:id="txtFieldEmail" layoutX="528.0" layoutY="365.0" prefHeight="25.0" prefWidth="374.0" />
+      <Label layoutX="30.0" layoutY="402.0" text="Tel Entidade" />
+      <TextField fx:id="txtFieldTelEntidade" layoutX="29.0" layoutY="419.0" />
+      <Label layoutX="192.0" layoutY="402.0" text="Fax Entidade" />
+      <TextField fx:id="txtFieldFaxEntidade" layoutX="191.0" layoutY="419.0" />
+      <Label layoutX="30.0" layoutY="459.0" text="Und. Gestora Org. Federal" />
+      <TextField fx:id="txtFieldUndGestOrgFederal" layoutX="29.0" layoutY="476.0" />
+      <Label layoutX="207.0" layoutY="459.0" text="Gestor Org. Federal" />
+      <TextField fx:id="txtFieldGestorOrgFederal" disable="true" layoutX="206.0" layoutY="476.0" />
+      <Label layoutX="369.0" layoutY="459.0" text="CNAS" />
+      <TextField fx:id="txtFieldCNAS" layoutX="368.0" layoutY="476.0" />
+      <Label layoutX="531.0" layoutY="459.0" text="Cod. Censo" />
+      <TextField fx:id="txtFieldCodCenso" layoutX="530.0" layoutY="476.0" />
+      <TextField fx:id="txtFieldContmatic" layoutX="690.0" layoutY="476.0" />
+      <Label layoutX="29.0" layoutY="517.0" text="Nome da Escola" />
+      <TextField fx:id="txtFieldNomeEscola" layoutX="29.0" layoutY="534.0" prefHeight="25.0" prefWidth="872.0" />
+      <Group layoutX="526.0" layoutY="559.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button fx:id="btnConfirmar" mnemonicParsing="false" onAction="#handleBtnConfirmar" text="Confirmar" />
+            <Button fx:id="btnCancelar" layoutX="79.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="69.0" text="Cancelar" />
+         </children>
+      </Group>
+      <Label layoutX="691.0" layoutY="459.0" text="Contmatic" />
+   </children>
+</AnchorPane>

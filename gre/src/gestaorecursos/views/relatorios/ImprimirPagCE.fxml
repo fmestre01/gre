@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.Relatorios.ImprimirPagCEController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/imprimirpagce.css" />
+    </stylesheets>
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="371.0" layoutX="13.0" layoutY="14.0" stroke="#cdc9c9" strokeType="INSIDE" width="574.0" />
+      <Label layoutX="38.0" layoutY="24.0" text="Relatório de Pagamentos">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbxUex" layoutX="38.0" layoutY="123.0" prefHeight="25.0" prefWidth="513.0" promptText="Selecione a Uex" />
+      <ComboBox fx:id="cbxAno" layoutX="38.0" layoutY="190.0" prefWidth="150.0" promptText="Selecione o Ano" />
+      <ComboBox fx:id="cbxTrimestre" layoutX="334.0" layoutY="190.0" prefHeight="25.0" prefWidth="218.0" promptText="Selecione o Trimestre" />
+      <Button fx:id="btnImprimir" layoutX="335.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleBtnImprimir" prefHeight="25.0" prefWidth="97.0" text="Imprimir" />
+      <Button fx:id="btnCancelar" layoutX="454.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="97.0" text="Cancelar" />
+      <Label layoutX="39.0" layoutY="58.0" text="Menu de Impressão">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUex" disable="true" layoutX="39.0" layoutY="245.0" promptText="Uex" visible="false" />
+      <TextField fx:id="txtAno" disable="true" layoutX="40.0" layoutY="281.0" promptText="Ano" visible="false" />
+      <TextField fx:id="txtTrimestre" disable="true" layoutX="41.0" layoutY="318.0" promptText="Trimestre" visible="false" />
+   </children>
+</AnchorPane>

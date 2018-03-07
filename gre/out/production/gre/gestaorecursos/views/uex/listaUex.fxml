@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1075.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.Lista.ListaUexController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/listauex.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.5349487418452936" prefHeight="650.0" prefWidth="1075.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="339.0">
+               <children>
+                  <TableView fx:id="tbViewUex" prefHeight="618.0" prefWidth="356.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tbColApelido" prefWidth="129.99998474121094" text="Apelido" />
+                      <TableColumn fx:id="tbColUex" prefWidth="438.00001525878906" text="UEx" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="600.0">
+               <children>
+                  <GridPane layoutX="40.0" layoutY="28.0" prefHeight="516.0" prefWidth="450.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="136.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="314.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="ID">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Apelido" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="UEx Fantasia" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Uex" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="CNPJ" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Endereço" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Número" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Complemento" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="CEP" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Bairro" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Município" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="UF" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Cx Postal" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="DDD" GridPane.rowIndex="13">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Telefone" GridPane.rowIndex="14">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Fax" GridPane.rowIndex="15">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Email" GridPane.rowIndex="16">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tipo Entidade" GridPane.rowIndex="17">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tel. Entidade" GridPane.rowIndex="18">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Fax Entidade" GridPane.rowIndex="19">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Und Gestora Federal" GridPane.rowIndex="20">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Gestor Org. Federal" GridPane.rowIndex="21">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="CNAS" GridPane.rowIndex="22">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Cod. CENSO" GridPane.rowIndex="24">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Nome Escola" GridPane.rowIndex="25">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbId" GridPane.columnIndex="1" />
+                        <Label fx:id="lbApelido" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="lbUexF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lbUex" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="lbCNPJ" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="lbEndereco" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="lbEndNum" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="lbEndCompl" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="lbCEP" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label fx:id="lbBairro" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label fx:id="lbMunicipio" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label fx:id="lbUf" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label fx:id="lbCxPostal" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <Label fx:id="lbDDD" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                        <Label fx:id="lbTelefone" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                        <Label fx:id="lbFax" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                        <Label fx:id="lbEmail" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                        <Label fx:id="lbTipoEntidade" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                        <Label fx:id="lbTelEntidade" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                        <Label fx:id="lbFaxEntidade" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+                        <Label fx:id="lbUndGestFed" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                        <Label fx:id="lbGestorOrgFed" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                        <Label fx:id="lbCNAS" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+                        <Label fx:id="lbCodCenso" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+                        <Label fx:id="lbNomeEscola" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+                        <Label text="Contmatic" GridPane.rowIndex="23">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbContmatic" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+                     </children>
+                  </GridPane>
+                  <Group layoutX="281.0" layoutY="570.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button fx:id="btnInserir" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="25.0" prefWidth="60.0" text="Inserir" />
+                        <Button fx:id="btnAlterar" layoutX="71.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="25.0" prefWidth="60.0" text="Alterar" />
+                        <Button fx:id="btnExcluir" layoutX="142.0" mnemonicParsing="false" onAction="#handleButtonRemover" prefHeight="25.0" prefWidth="60.0" text="Excluir" />
+                     </children>
+                  </Group>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

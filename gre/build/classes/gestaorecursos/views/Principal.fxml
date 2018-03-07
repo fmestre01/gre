@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="1075.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.PrincipalController">
+        <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/principal.css" />
+        </stylesheets>
+   <children>
+      <MenuBar prefHeight="25.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Cadastro">
+               <items>
+                  <MenuItem fx:id="menuItemCadUEx" mnemonicParsing="false" onAction="#handleMenuItemCadUEx" text="Cadastro de Unidade Executora" />
+                  <MenuItem fx:id="menuItemCadUDirigente" mnemonicParsing="false" onAction="#handleMenuItemCadDirigente" text="Cadastro de Dirigente" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <Menu mnemonicParsing="false" text="Fornecedor">
+                    <items>
+                        <MenuItem fx:id="menuItemCadFornecedor" mnemonicParsing="false" onAction="#handleMenuItemCadFornecedor" text="Fornecedor PJ" />
+                      <MenuItem fx:id="menuItemCadFornecedorPf" mnemonicParsing="false" onAction="#handleMenuItemCadFornecedorPf" text="Fornecedor PF" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Cadastros Básicos">
+                    <items>
+                        <MenuItem fx:id="menuItemCadBairros" mnemonicParsing="false" onAction="#handleMenuItemCadBairros" text="Cadastro de Bairros" />
+                        <MenuItem fx:id="menuItemCadCidades" mnemonicParsing="false" onAction="#handleMenuItemCadCidades" text="Cadastros de Municípios" />
+                        <MenuItem fx:id="menuItemCadUf" mnemonicParsing="false" onAction="#handleMenuItemCadUf" text="Cadastro de UF" />
+                        <MenuItem fx:id="menuItemCadHistoricos" mnemonicParsing="false" onAction="#handleMenuItemCadHistoricos" text="Cadastro de Históricos" />
+                        <Menu mnemonicParsing="false" text="Cadastro de Tipos">
+                          <items>
+                              <MenuItem fx:id="menuItemCadTipoDoc" mnemonicParsing="false" onAction="#handleMenuItemCadTipoDoc" text="Tipo de Documento" />
+                            <MenuItem fx:id="menuItemCadTipoEntidade" mnemonicParsing="false" onAction="#handleMenuItemCadTipoEntidade" text="Tipo de Entidade" />
+                          </items>
+                        </Menu>
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="menuItemCadBancos" mnemonicParsing="false" onAction="#handleMenuItemCadBancos" text="Cadastro de Bancos" />
+                  <MenuItem fx:id="menuItemCadContas" mnemonicParsing="false" onAction="#handleMenuItemCadContas" text="Cadastro de Contas" />
+                  <MenuItem fx:id="menuItemCadProgramas" mnemonicParsing="false" onAction="#handleMenuItemCadProgramas" text="Cadastro de Programas" />
+                  <MenuItem fx:id="menuItemCadPlano" mnemonicParsing="false" onAction="#handleMenuItemCadPlano" text="Cadastro Plano de Contas" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Montar Conciliação">
+               <items>
+                <MenuItem mnemonicParsing="false" text="PDDE" />
+                  <MenuItem fx:id="menuItemInserir" mnemonicParsing="false" onAction="#handleMenuItemInserir" text="Conta Escola" />
+               </items>
+            </Menu>
+            <Menu fx:id="btnSair" mnemonicParsing="false" text="Sair" />
+         </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPanePrincipal" prefHeight="580.0" prefWidth="241.0">
+         <children>
+            <Label fx:id="lbDB" layoutX="1005.0" prefHeight="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="1005.0" AnchorPane.rightAnchor="20.0" />
+         </children></AnchorPane>
+   </children>
+</VBox>

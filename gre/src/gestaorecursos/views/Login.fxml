@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorecursos.Controller.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label id="labelUsuario" fx:id="labelUsuario" layoutX="177.0" layoutY="192.0" text="Usuário" />
+            <TextField id="txtFieldUsuario" fx:id="txtFieldUsuario" layoutX="226.0" layoutY="188.0" promptText="Digite o seu usuário" />
+            <Label id="labelSenha" fx:id="labelSenha" layoutX="185.0" layoutY="244.0" text="Senha" />
+            <PasswordField id="txtFieldSenha" fx:id="passwordFieldSenha" layoutX="226.0" layoutY="240.0" promptText="Digite sua Senha" />
+            <Button id="btnEntrar" fx:id="btnEntrar" layoutX="177.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Entrar" />
+            <Button id="btnSair" fx:id="btnSair" layoutX="340.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Sair" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1075.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="gestaorecursos.Controller.Lista.ListaDirigenteController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/listadirigente.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.5004659832246039" layoutX="-7.0" layoutY="110.0" prefHeight="620.0" prefWidth="1075.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tbViewDirigente" layoutX="-34.0" layoutY="41.0" prefHeight="618.0" prefWidth="317.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tbColEscola" prefWidth="268.0" text="Escola" />
+                      <TableColumn fx:id="tbColDirigente" prefWidth="265.0" text="Dirigente" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Group layoutX="27.0" layoutY="495.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button fx:id="btnInserir" mnemonicParsing="false" onAction="#handleBtnInserir" prefHeight="25.0" prefWidth="52.0" text="Inserir" />
+                        <Button fx:id="btnAlterar" layoutX="65.0" mnemonicParsing="false" onAction="#handleBtnAlterar" text="Alterar" />
+                        <Button fx:id="btnExcluir" layoutX="130.0" mnemonicParsing="false" onAction="#handleBtnExcluir" prefHeight="25.0" prefWidth="52.0" text="Excluir" />
+                     </children>
+                  </Group>
+                  <GridPane layoutX="10.0" layoutY="65.0" prefHeight="429.0" prefWidth="474.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="149.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="295.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="ID" />
+                        <Label text="Nome" GridPane.rowIndex="1" />
+                        <Label text="Nome Fantasia" GridPane.rowIndex="2" />
+                        <Label text="CPF" GridPane.rowIndex="3" />
+                        <Label text="CCM" GridPane.rowIndex="4" />
+                        <Label text="Identidade" GridPane.rowIndex="5" />
+                        <Label text="Endereço" GridPane.rowIndex="6" />
+                        <Label text="Nº" GridPane.rowIndex="7" />
+                        <Label text="Complemento" GridPane.rowIndex="8" />
+                        <Label text="CEP" GridPane.rowIndex="9" />
+                        <Label text="Bairro" GridPane.rowIndex="10" />
+                        <Label text="Município" GridPane.rowIndex="11" />
+                        <Label text="UF" GridPane.rowIndex="12" />
+                        <Label text="País" GridPane.rowIndex="13" />
+                        <Label text="Telefone" GridPane.rowIndex="14" />
+                        <Label text="Celular" GridPane.rowIndex="15" />
+                        <Label text="Email" GridPane.rowIndex="16" />
+                        <Label text="Site" GridPane.rowIndex="17" />
+                        <Label fx:id="lbID" GridPane.columnIndex="1" />
+                        <Label fx:id="lbNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="lbNomeFantasia" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lbCnpj" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="lbCcm" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="lbIdentidade" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="lbEndereco" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="lbEndNum" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="lbEndCompl" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label fx:id="lbCep" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label fx:id="lbBairro" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label fx:id="lbCidade" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label fx:id="lbUf" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <Label fx:id="lbPais" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                        <Label fx:id="lbTelefone" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                        <Label fx:id="lbCelular" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                        <Label fx:id="lbEmail" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                        <Label fx:id="lbSite" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

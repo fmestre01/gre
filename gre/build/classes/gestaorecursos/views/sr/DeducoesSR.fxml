@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="gestaorecursos.Controller.SR.DeducoesSRController">
+    <stylesheets>
+        <URL value="@/gestaorecursos/resources/css/deducoessr.css" />
+    </stylesheets>
+   <children>
+      <DatePicker fx:id="inputData" layoutX="30.0" layoutY="130.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="txtFieldNumDoc" layoutX="203.0" layoutY="130.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="txtFieldValor" layoutX="378.0" layoutY="130.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="txtFieldHistorico" layoutX="30.0" layoutY="180.0" prefHeight="25.0" prefWidth="500.0" />
+      <ComboBox fx:id="cbxPrograma" layoutX="30.0" layoutY="230.0" prefHeight="25.0" prefWidth="500.0" />
+      <ComboBox fx:id="cbxUex" layoutX="30.0" layoutY="280.0" prefHeight="25.0" prefWidth="500.0" />
+      <ComboBox fx:id="cbxAno" layoutX="30.0" layoutY="330.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbxTrimestre" layoutX="203.0" layoutY="330.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="40.0" text="Inserir Dedução" textFill="#b29c9c">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbData" layoutX="31.0" layoutY="113.0" text="Data" />
+      <Label layoutX="204.0" layoutY="113.0" text="Nº Documento" />
+      <Label layoutX="379.0" layoutY="113.0" text="Valor" />
+      <Label layoutX="31.0" layoutY="163.0" text="Histórico" />
+      <Label layoutX="31.0" layoutY="213.0" text="Programa" />
+      <Label layoutX="31.0" layoutY="263.0" text="Uex" />
+      <Label layoutX="31.0" layoutY="313.0" text="Ano" />
+      <Label layoutX="204.0" layoutY="313.0" text="Trimestre" />
+      <Group layoutX="435.0" layoutY="355.0">
+         <children>
+            <Button fx:id="btnConfirmar" mnemonicParsing="false" onAction="#handleBtnConfirmar" prefHeight="25.0" prefWidth="70.0" text="Confirmar" />
+            <Button fx:id="btnCancelar" layoutX="80.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="70.0" text="Cancelar" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
